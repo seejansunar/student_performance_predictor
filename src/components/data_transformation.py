@@ -28,8 +28,14 @@ class DataTransformation:
         This function is responsible for data transformation
         '''
         try:
-            numerical_columns = ['WINDOW_WEEK', 'TOTAL_WORK_BLOCK_PLANNED', 'DESIRED_WORKING_HOURS', 'YEAR', 'MONTH', 'DAY', 'MOVING_AVERAGE']
-            categorical_columns = ['worker_email']
+            numerical_columns = ['reading_score', 'writing_score']
+            categorical_columns = [
+                'gender',
+                'race_ethnicity',
+                'parental_level_of_education',
+                'lunch',
+                'test_preparation_course'
+            ]
 
             num_pipeline = Pipeline(
                 steps=[

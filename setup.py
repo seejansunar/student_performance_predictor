@@ -15,10 +15,10 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name="supply_prediction",
+    name="mlproject",
     version='0.0.1',
     author='seejan',
-    author_email='seejan.sunar.001@gmail.com',
+    author_email='seejansunar001@gmail.com',
     packages=find_packages(),
     install_requires=get_requirements('requirements.txt')
 )
